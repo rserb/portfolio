@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Projet 2 | Site de RaphaelB</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="projet2style.css">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <li class="R"><a href="index.html">R.</a></li>
+                <ul>
+                    <li><a href="projets.html">Mes Projets</a></li>
+                    <li><a href="about.html">A propos de moi</a></li>
+                    <li><a href="contact.html">Mes contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="illustration">
+            <p></p>
+        </section>
+
+
+        <section class="container">
+            <div class="content">
+                <h1>Projet d'étude sur le nutriscore en Anglais</h1>
+
+                <h2 class="sous-titre">L'ampleur du projet</h2>
+                <p>Ce projet de groupe avait pour but de produire une étude en anglais sur le nutri-score et la manière de le déterminer en fonction des composants nutritifs de l’aliment. Afin de mener à bien cette étude, nous nous sommes munis de la base de données d’openfoodfacts, une organisation internationale récoltant des données sur nos aliments. La base de donnée avait une taille de 3 076 420 lignes. Après plusieurs observations sur différents produits alimentaires, la question de savoir comment était jugé le nutri-score et ce qu’il représentait nous a semblé être un thème solide d’étude sérieuse. En effet, la question peut sembler anodine, mais est relève en fait d’observations quelque peu contradictoires : Il était fréquent de s'apercevoir que certains aliments ayant une réputation d’aliments sain présentaient un nutri score faible, alors que d’autres aliments ayant une réputation d’aliments peu sains présentaient un nutri score élevé. Ce que nous considérions comme ayant une réputation d’aliment sain étaient les aliments issu de l’agriculture biologique, ou les produits végétariens ou végan, car ils prétendaient avoir moins de gras et de protéine.
+                </p>
+                <br>
+                <h2 class="sous-titre">L'organisation du projet</h2>
+                <p>Nous avons réalisé ce projet à deux avec un ami d’école afin de pouvoir se répartir le travail équitablement. Etant donné que nous étions peu sur ce projet, la répartition des tâches s’est faite moins contrastée. En effet, nous avions décidé de participer tous les deux activement à toutes les parties de ce projet. Malgré tout, de par nos différences de compétences, j’ai été plus présent sur la partie de la gestion de la base de données, tandis que mon camarade était plus centré du côté de l’étude. 
+
+                    Afin de débuter efficacement ce projet, nous avons commencé par nous rendre compte de toutes les contraintes et les risques qui pourraient mener à mal ce projet. Après avoir mis à plat tous les potentiels accrocs au projet et déterminé la criticité des risque ainsi que de la manière de les gérer, nous avons pu nous débuter la réalisation de ce projet.
+                    
+                </p>
+                <br>
+                <h2 class="sous-titre">La réalisation</h2>
+                <p>
+                    La réalisation s’est faite en plusieurs étapes, nous avons commencé par entièrement appréhender la base de donnée qui nous était à disposition et avons décidé de centrer notre étude seulement sur les fromages français, réduisant largement notre base de donnée qui était à l’origine trop importante et trop inexacte. Malheureusement, trier par aliment n’as pas suffi à réduire toutes les inexactitudes; de ce fait, nous avons choisi de concentrer nos premiers efforts sur le tri complet de la base de donnée afin de minimiser les informations inutiles/inexactes. Tout d’abord, nous avons réduit les informations présentes par aliment, afin d’affiner notre regard sur les informations qui nous intéressent, et cela nous a aussi permis d’avoir une base de donnée plus visible, et plus humainement abordable. Les champs qui nous intéressaient étaient les quantités par nutriments qui entrain dans le calcul du nutriscore. En ce qui est du nettoyage, nous avons trié la base de données selon certains critères assez précis : le code et le nutriscore des aliments devaient être renseignés, et le nutriscore devait se trouver entre A et E, toutes lignes ayant une valeur en erreur devaient être supprimées, les codes des aliments devaient respecter la norme internationale, les champs représentant une quantité de nutriment pour 100g devraient être inférieurs à 100 et biensur, la base de donnée ne devait pas présenter de doublons. Après avoir trié toutes ces données, nous avons mis en place les champs “vegan”, “vegetarian”, “palm_oil” ainsi que 4 champs présentant la quantité de gras, de gras saturé, de sucres et de sel. 
+
+Une fois notre base de données triée et représentant des donnée qui nous sont intéressantes, nous avons pu commencer notre étude rédigée en anglais. Pour ce faire, nous avons généré plusieurs graphiques à l’aide de Rstudio et de l’extension ggplot2 afin de monter une étude complète.
+
+                </p>
+                <br>
+                <h2 class="sous-titre">Les résultats</h2>
+                <p>Les résultats de notre étude ont étés que le nutri-score n’est pas un indice représentant la qualité de l’aliment en question, mais il représente seulement un calcul en fonction des nutriments des aliments. C’est en générant des graphiques représentant les quantités de gras, de protéines et de sels dans les fromage les séparant par catégorie (selon s’ils étaient vegan, végétariens ou classiques) que nous avons observé que les fromages vegan et végétariens avaient tous un nutri score inférieur aux fromages classiques. Cette observation semble curieuse face à l’idée habituelle que l’on se fait des produits vegan et végétariens. Nous avons donc pu remarquer à l’aide de nos graphiques, que cela s’expliquait par le fait que les fromages vegan et végétariens présentaient moins de protéines que les fromages classiques pour une quantité environ égale de gras. Les compétences mises en oeuvre lors de ce projet étaient majoritairement des compétences de reconnaissance de critères de selection pour le tri dans la base de donnée, ainsi qu'un esprit suffisament critique pour pouvoir juger ces résultats et produire une théorie qui peut se vérifier à travers les chiffres.
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+
+            <div class="footer-content">
+                <a href="https://fr.linkedin.com/?trk=guest_homepage-basic_nav-header-logo"><img  width="64" height="64" src="https://img.icons8.com/ios-filled/64/FFFFFF/linkedin.png"></a>
+                <a href="https://github.com/"><img width="64" height="64" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/64/FFFFFF/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.png" alt="external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo"/></a>
+                <a href="https://www.instagram.com/"><img width="64" height="64" src="https://img.icons8.com/material-outlined/64/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+            </div>
+
+       
+    </body>
+</html>
