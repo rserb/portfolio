@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Projet 1 | Site de RaphaelB</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/projetstyle.css">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <li class="R"><a href="index.html">R.</a></li>
+                <ul>
+                    <li><a href="projets.html">Mes Projets</a></li>
+                    <li><a href="about.html">A propos de moi</a></li>
+                    <li><a href="contact.html">Mes contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="illustration">
+            <p></p>
+        </section>
+
+
+        <section class="container">
+            <div class="content">
+                <h1>Projet de Classification Automatique</h1>
+
+                <h2 class="sous-titre">L'ampleur du projet</h2>
+                <p>Ce projet de groupe visait à créer un algorithme de classification automatique de dépêches
+                    respectant toutes une forme commune sur Java. En effet, une dépêche devait commencer par un
+                    titre, puis préciser à quel thème elle appartenait pour que l’algorithme « apprenne » du vocabulaire
+                    par thème afin de pouvoir les classer de plus en plus précisément, et enfin suivi du texte contenu
+                    dans la dépêche. Les thèmes abordés par les dépêches étaient limités à 5 pour pouvoir faire un tri qui
+                    ne se disperse pas trop, et parmi ceux-ci il y avait : ENVIONNEMENT-SCIENCES, la CULTURE,
+                    l’ECONOMIE, la POLITIQUE et les SPORTS. Le projet a duré 4 jours, commençant le lundi 15 janvier
+                    2024 et le rendu était à faire pour le vendredi 19 janvier 2024 avec un passage oral afin d’expliquer le
+                    projet au jury.
+                </p>
+                <br>
+                <h2 class="sous-titre">L'organisation du projet</h2>
+                <p>Nous avons réalisé ce projet à trois avec des amis afin de pouvoir se répartir les rôles et travailler
+                    plus efficacement, l’un s’occupait de la partie « main » du programme, l’autre s’occupait de faire le
+                    compte rendu du projet afin d’avoir un suivi le long du projet grâce à ses notes, tandis que moi je
+                    m’occupais de coder les méthodes qui ont donné vie au programme. Ma partie du travail m’a
+                    beaucoup plu et j’ai pu largement renforcer et approfondir mes connaissances en Java ; elle m’a
+                    permis d’apprendre à beaucoup m’autonomiser en programmation et à voir plus loin qui les
+                    exercices de cours. Moi qui suis très intéressé dans les IA, ce projet a été pour moi une petite
+                    introduction à leur monde ce qui fut passionnant.
+                </p>
+                <br>
+                <h2 class="sous-titre">La réalisation</h2>
+                <p>
+                    La réalisation s’est faite en plusieurs étapes, tout d’abord nous avons commencé par créer des
+lexiques par thème à la main, et pour chaque mot nous rajoutions un « poids » au mot entre 1 et 3
+qui servait à indiquer à quel point le mot correspondait à cette catégorie ; 3 étant un mot qui
+corresponde uniquement à ce thème et 1 étant un mot qui peut être un peu plus génériques, ou à
+interprétation plus ouverte. A l’aide ces lexiques et de quelques méthodes que j’ai programmé, nous
+pouvions calculer la somme des poids de chaque mot dans une dépêche par thème, ce qui nous
+donnait un score par thème pour chaque dépêche, et enfin, à l’aide de ce score, nous pouvions
+déterminer à quel thème la dépêche appartient. Cette solution était fonctionnelle mais très peu
+efficace, nous devions faire le lexique et les poids de mots à la main, ce qui peut être très imprécis
+(nous ne pouvions pas penser à tous les mots par catégorie, et déterminer des poids très précis sans
+facteurs sur lesquels se baser), c’est pourquoi nous avons essayé d’automatiser ce processus. Pour
+réaliser l’automatisation des lexiques, nous avons d’abord récupéré une base de données
+comprenant plusieurs centaines de dépêches afin d’avoir un maximum de mots et de textes de
+catégories différentes à fournir à la machine. A l’aide de plusieurs méthodes dont je me suis chargé,
+nous avons pu créer un programme qui nous permette d’entrer la base de données de dépêches
+dans l’ordinateur, qui viendra lire et stocker tous les mots par catégorie. Une fois tous les mots des
+dépêches triés par catégorie (tous les mots de dépêches de la catégorie SPORTS étaient dans le
+lexique généré automatiquement de la catégorie SPORTS), une autre méthode nous permettait de
+calculer un score associé au mot selon un critère bien particulier : si un mot d’une catégorie se
+retrouvait dans une autre dépêche de la même catégorie, son score était incrémenté de 1, et si on le
+retrouvait dans une autre catégorie, son score était décrémenté de 1, nous avions donc un score
+pour chaque mots de chaque dépêches triés par catégories. Ces scores par mots nous permettaient
+donc de déterminer leurs poids ce qui nous ramenait à avoir des lexiques de la forme de ceux que
+nous avions fait à la main, mais générés automatiquement par l’ordinateur selon des critères
+effectifs.
+                </p>
+                <br>
+                <h2 class="sous-titre">Les résultats</h2>
+                <p>Suite à tout ce traitement de données, nous avons pu comparer la catégorie réelle de la dépêche
+                    avec la catégorie trouvée par l’ordinateur pour chaque dépêche afin de calculer un pourcentage de
+                    fiabilité par catégorie. Les résultats pour les lexiques faits à la main environnaient les 50% de fiabilité,
+                    alors que les résultats pour les lexiques générés automatiquement étaient plutôt autour des
+                    98%/100%.
+                    L’objectif qui était donc de déterminer automatiquement la catégorie d’une dépêche à partir de
+                    lexiques générés et évalués automatiquement par les méthodes codées était donc atteint.
+                    Les compétences mises en œuvre lors de ce projet étaient majoritairement de développer une
+                    solution informatique pour un client nous avons pu exerces nos capacités à concevoir, coder, tester
+                    et intégrer. Nous avons donc dû répondre aux exigences client et avons répondu à son besoin.</p>
+                
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+
+            <div class="footer-content">
+                <a href="https://fr.linkedin.com/?trk=guest_homepage-basic_nav-header-logo"><img  width="64" height="64" src="https://img.icons8.com/ios-filled/64/FFFFFF/linkedin.png"></a>
+                <a href="https://github.com/rserb"><img width="64" height="64" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/64/FFFFFF/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.png" alt="external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo"/></a>
+                <a href="https://www.instagram.com/raph.bres/"><img width="64" height="64" src="https://img.icons8.com/material-outlined/64/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+            </div>
+
+       
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Projet 5 | Site de RaphaelB</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/projet5style.css">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <li class="R"><a href="index.html">R.</a></li>
+                <ul>
+                    <li><a href="projets.html">Mes Projets</a></li>
+                    <li><a href="about.html">A propos de moi</a></li>
+                    <li><a href="contact.html">Mes contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="illustration">
+            <p></p>
+        </section>
+
+
+        <section class="container">
+    <div class="content">
+        <h1>Génération Automatisée de Données pour l'IA Vidéo</h1>
+
+        <h2 class="sous-titre">Contexte et Enjeux</h2>
+        <p>Dans le cadre de mon stage au LIRIS (Laboratoire d'InfoRmatique en Image et Systèmes d'information), j'ai développé une solution innovante pour pallier le manque crucial de données vidéo annotées de qualité nécessaires à l'entraînement des modèles de VideoQA (Video Question Answering). Les limitations des datasets existants - annotations manuelles fastidieuses, biais importants et manque de diversité - constituent un frein majeur au développement des intelligences artificielles dans ce domaine.</p>
+
+        <h2 class="sous-titre">Solution Technique</h2>
+        <p>J'ai conçu une architecture hybride Python/C++ permettant de piloter Unreal Engine 5 à distance via des WebSockets. Le serveur Python transforme des commandes haut niveau (comme "spawn character at x,y,z") en paquets JSON interprétés par un module C++ intégré à UE5. Cette solution intègre les MetaHumans pour des personnages ultra-réalistes et génère automatiquement des annotations précises (positions, actions, timestamps) tout en permettant la création procédurale de scènes complexes (hôpitaux, aéroports).</p>
+
+        <h2 class="sous-titre">Défis Techniques</h2>
+        <p>Le projet a présenté plusieurs défis majeurs : la complexité d'Unreal Engine 5 avec sa documentation limitée et ses temps de compilation longs (5-10 minutes par modification), l'intégration délicate des MetaHumans nécessitant des ajustements fins de physique et d'animations, ainsi que la synchronisation temps réel via WebSockets. Ces obstacles ont été surmontés grâce à une méthodologie rigoureuse combinant tests itératifs, système de logs détaillés et collaboration étroite avec mon maître de stage.</p>
+
+        <h2 class="sous-titre">Résultats et Applications</h2>
+        <p>Le système final permet de générer des datasets vidéo parfaitement annotés avec une précision de 98% sur les ground truth, tout en offrant un contrôle granulaire sur les paramètres des scènes (éclairage, angles de caméra, diversité des personnages). Cette solution réduit drastiquement le temps et les coûts de production des données d'entraînement, avec des applications potentielles bien au-delà du VideoQA, notamment dans les domaines médicaux (analyse d'endoscopies) et des véhicules autonomes.</p>
+
+        <h2 class="sous-titre">Compétences Acquises</h2>
+        <p>Ce projet a considérablement renforcé mes compétences en programmation hybride (Python/C++), en gestion de projet complexe et en résolution de problèmes techniques sous contraintes. Il a également démontré le potentiel des moteurs de jeu photoréalistes pour la recherche en IA, ouvrant des perspectives passionnantes pour mes futurs travaux dans ce domaine.</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+
+            <div class="footer-content">
+                <a href="https://fr.linkedin.com/?trk=guest_homepage-basic_nav-header-logo"><img  width="64" height="64" src="https://img.icons8.com/ios-filled/64/FFFFFF/linkedin.png"></a>
+                <a href="https://github.com/rserb"><img width="64" height="64" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/64/FFFFFF/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.png" alt="external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo"/></a>
+                <a href="https://www.instagram.com/raph.bres/"><img width="64" height="64" src="https://img.icons8.com/material-outlined/64/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+            </div>
+
+       
+    </body>
+</html>

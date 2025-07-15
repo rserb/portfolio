@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Projet 1 | Site de RaphaelB</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/projet4style.css">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <li class="R"><a href="index.html">R.</a></li>
+                <ul>
+                    <li><a href="projets.html">Mes Projets</a></li>
+                    <li><a href="about.html">A propos de moi</a></li>
+                    <li><a href="contact.html">Mes contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="illustration">
+            <p></p>
+        </section>
+
+
+        <section class="container">
+            <div class="content">
+                <h1>Projet d'amélioration d'application</h1>
+
+                <h2 class="sous-titre">L'ampleur du projet</h2>
+                <p>Ce projet de SAE (Situation d'Apprentissage et d'Évaluation) visait à optimiser une application existante dédiée au suivi des recherches de stage pour les étudiants. L'application se composait de plusieurs modules interconnectés : un frontend mobile destiné aux étudiants, leur permettant de consulter les offres de stage, de suivre leurs candidatures et de gérer des notifications ; un backend web réservé aux responsables de stage, offrant un tableau de bord complet pour la gestion des offres et des candidatures ; ainsi qu'un service web (API) couplé à une base de données PostgreSQL, le tout hébergé sur une machine virtuelle Debian.
+
+Les améliorations attendues couvraient plusieurs aspects critiques. Sur le plan technique, il s'agissait d'améliorer la qualité logicielle en révisant le modèle de données pour le mettre en troisième forme normale et en optimisant le code existant. L'ergonomie et l'accessibilité étaient également au cœur des préoccupations, avec une refonte complète de l'interface web pour la rendre accessible aux utilisateurs en situation de handicap. Par ailleurs, le projet incluait la modernisation de l'infrastructure via la conteneurisation avec Docker, ainsi qu'un volet important consacré à la documentation et aux tests, incluant des tests fonctionnels, d'interface et de couverture de code.
+                </p>
+                <br>
+                <h2 class="sous-titre">L'organisation du projet</h2>
+                <p>Réalisé en équipe de cinq à six étudiants, ce projet a nécessité une organisation rigoureuse et une répartition claire des tâches. Chaque membre de l'équipe s'est vu attribuer un module spécifique à améliorer. Certains se sont concentrés sur l'hébergement de l'application avec Docker, tandis que d'autres ont travaillé sur l'optimisation du backend, incluant le service web développé avec Symfony et la migration du modèle de données. Une partie de l'équipe a pris en charge le frontend mobile, améliorant le cycle de vie de l'application Android et veillant à sa conformité avec l'API.
+
+Pour garantir une collaboration efficace, nous avons adopté des méthodologies agiles. L'utilisation de Git pour le versionnage du code et de Jira pour le suivi des tâches nous a permis de maintenir une vision claire de l'avancement du projet. Des revues de code hebdomadaires étaient organisées pour s'assurer de la cohérence des améliorations apportées et pour résoudre rapidement les éventuels problèmes.
+                </p>
+                <br>
+                <h2 class="sous-titre">La réalisation</h2>
+                <p>
+                    Le projet s'est déroulé en plusieurs phases distinctes, chacune marquant une étape clé dans l'amélioration de l'application. La première phase, la rétroconception, a consisté à analyser en profondeur le code existant pour identifier les anomalies. Nous avons notamment relevé des incohérences dans l'architecture Symfony et des problèmes de normalisation dans le modèle de données.
+
+Les améliorations techniques ont constitué la deuxième phase. Nous avons migré la base de données vers un schéma respectant la troisième forme normale et optimisé les requêtes SQL pour améliorer les performances. Côté service web, nous avons corrigé les incohérences métier, notamment dans la gestion des états des candidatures. La conteneurisation avec Docker a été un autre chantier important : nous avons créé des conteneurs pour simplifier le déploiement, en documentant précisément chaque étape dans des fichiers Dockerfile.
+
+La troisième phase a porté sur la refonte de l'expérience utilisateur et de l'interface. Pour l'application web, nous avons intégré des graphiques via Chart.js et renforcé l'accessibilité en améliorant les contrastes et en utilisant des attributs ARIA. L'application mobile a quant à elle bénéficié d'une révision complète du système de notifications et de la gestion des rappels.
+
+Enfin, la dernière phase a été consacrée aux tests et à la documentation. Nous avons rédigé des tests unitaires avec PHPUnit et des tests d'intégration avec Cypress, tout en produisant un rapport détaillé expliquant nos choix techniques et les critères de qualité retenus, conformément à la norme ISO 25000.
+                </p>
+                <br>
+                <h2 class="sous-titre">Les compétences mobilisées</h2>
+                <p>Ce projet a été l'occasion de mettre en pratique un large éventail de compétences techniques et méthodologiques. Sur le plan technique, nous avons utilisé Symfony pour le backend, Docker pour la conteneurisation, PostgreSQL pour la base de données, et nous nous sommes familiarisés avec les bonnes pratiques d'accessibilité (WCAG).
+
+D'un point de vue méthodologique, la gestion de projet agile, la réalisation de tests logiciels et la production d'une documentation technique complète ont été des aspects essentiels. Les soft skills n'ont pas été en reste : la collaboration au sein d'une équipe pluridisciplinaire, la communication lors des revues de code et la présentation orale lors de la démo finale ont été des éléments clés de notre réussite.</p>
+                <h2 class="sous-titre">Conclusion</h2>
+                <p>Ce projet a représenté une opportunité unique de concilier théorie et pratique. En appliquant des concepts tels que la normalisation des bases de données ou les critères de qualité logicielle, tout en travaillant sur des aspects concrets comme le déploiement ou l'expérience utilisateur, nous avons pu répondre efficacement aux besoins des utilisateurs. Cette expérience a renforcé nos compétences techniques et notre capacité à travailler en équipe, tout en nous sensibilisant à l'importance de l'accessibilité et de la qualité dans le développement logiciel.</p>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+
+            <div class="footer-content">
+                <a href="https://fr.linkedin.com/?trk=guest_homepage-basic_nav-header-logo"><img  width="64" height="64" src="https://img.icons8.com/ios-filled/64/FFFFFF/linkedin.png"></a>
+                <a href="https://github.com/rserb"><img width="64" height="64" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/64/FFFFFF/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.png" alt="external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo"/></a>
+                <a href="https://www.instagram.com/raph.bres/"><img width="64" height="64" src="https://img.icons8.com/material-outlined/64/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+            </div>
+
+       
+    </body>
+</html>

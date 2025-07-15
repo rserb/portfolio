@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Projet 5 | Site de RaphaelB</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/projet6style.css">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <li class="R"><a href="index.html">R.</a></li>
+                <ul>
+                    <li><a href="projets.html">Mes Projets</a></li>
+                    <li><a href="about.html">A propos de moi</a></li>
+                    <li><a href="contact.html">Mes contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="illustration">
+            <p></p>
+        </section>
+
+
+        <section class="container">
+    <div class="content">
+        <h1>MonaDev - Plateforme de création d'événement dans des lieux de Patrimoine Culturel</h1>
+
+        <h2 class="sous-titre">Contexte et Enjeux</h2>
+        <p>Dans le cadre d'un projet semestriel à l'IUT2 de Grenoble, notre équipe de 7 étudiants a développé <strong>Mona</strong>, une plateforme web innovante inspirée du modèle Airbnb pour valoriser le patrimoine culturel français. Le défi consistait à créer une solution permettant :</p>
+        <ul>
+            <li>La découverte interactive de 45 000+ monuments historiques</li>
+            <li>La réservation d'expériences culturelles (chasses au trésor, événements)</li>
+            <li>La gestion simplifiée pour propriétaires de monuments</li>
+        </ul>
+        <p>Le projet s'inscrivait dans une démarche pluridisciplinaire intégrant développement web, gestion de projet, analyse de données et cybersécurité.</p>
+
+        <h2 class="sous-titre">Organisation et Méthodologie</h2>
+        <p>Nous avons adopté une <strong>gestion agile</strong> répartie sur 4 phases :</p>
+        <div class="grid-container">
+            <div class="phase">
+                <h3>Phase 1</h3>
+                <p>Analyse des besoins<br>Personas<br>Étude de faisabilité</p>
+            </div>
+            <div class="phase">
+                <h3>Phase 2</h3>
+                <p>Modélisation UML<br>Architecture technique<br>ETL des données</p>
+            </div>
+            <div class="phase">
+                <h3>Phase 3</h3>
+                <p>Développement intensif<br>Tests utilisateurs</p>
+            </div>
+        </div>
+        <p>Outils clés : <strong>Notion</strong> pour la gestion de projet, <strong>GitLab</strong> avec bot Discord pour la coordination, et <strong>Pair Programming</strong> pour assurer la qualité du code.</p>
+
+        <h2 class="sous-titre">Réalisation Technique</h2>
+        <div class="tech-stack">
+            <div class="phase">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>ReactJS avec architecture composants</li>
+                    <li>Palette CSS harmonisée</li>
+                    <li>Système de routing dynamique</li>
+                </ul>
+            </div>
+            <div class="phase">
+                <h3>Backend</h3>
+                <ul>
+                    <li>API REST custom en PHP</li>
+                    <li>PostgreSQL pour la base de données</li>
+                    <li>Talend pour l'ETL des données Mérimée</li>
+                </ul>
+            </div>
+            <div class="phase">
+                <h3>Infrastructure</h3>
+                <ul>
+                    <li>Déploiement sur VM IUT</li>
+                    <li>HTTPS avec certificat auto-signé</li>
+                    <li>Firewall et fail2ban</li>
+                </ul>
+            </div>
+        </div>
+        <p>Innovation majeure : <strong>système ETL</strong> croisant les bases Mérimée (data.gouv.fr) et OpenStreetMap pour enrichir automatiquement les fiches monuments avec des adresses précises.</p>
+
+        <h2 class="sous-titre">Défis et Solutions</h2>
+        <div class="challenges">
+            <div class="phase">
+                <h4>Cyberattaque IONOS</h4>
+                <p>Notre serveur initial a été compromis par un ransomware. Solution : migration rapide vers les VM IUT avec restauration depuis les sauvegardes SQL.</p>
+            </div>
+            <div class="phase">
+                <h4>Intégration ReactJS</h4>
+                <p>Difficultés d'apprentissage pour l'équipe. Solution : TP préparatoire et composants standardisés.</p>
+            </div>
+            <div class="phase">
+                <h4>Qualité des données</h4>
+                <p>30% des monuments sans adresse précise. Solution : script Python de géocodage via OpenStreetMap.</p>
+            </div>
+        </div>
+
+        <h2 class="sous-titre">Résultats et Bilan</h2>
+        <p>Après 3 mois de développement :</p>
+        <ul>
+            <li><strong>8 000+</strong> monuments intégrés avec fiches complètes</li>
+            <li>Système de réservation d'événements culturels opérationnel</li>
+            <li>Système de gestion de compte personnel sécurisé</li>
+
+        </ul>
+        <p>Principaux apprentissages : gestion d'équipe pluridisciplinaire, méthodologie de projet agile, et résilience face aux imprévus techniques. Le projet a reçu les félicitations du jury pour son innovation dans la valorisation du patrimoine.</p>
+
+    </div>
+</section>
+
+
+
+
+
+
+        <footer>
+
+            <div class="footer-content">
+                <a href="https://fr.linkedin.com/?trk=guest_homepage-basic_nav-header-logo"><img  width="64" height="64" src="https://img.icons8.com/ios-filled/64/FFFFFF/linkedin.png"></a>
+                <a href="https://github.com/rserb"><img width="64" height="64" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/64/FFFFFF/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.png" alt="external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo"/></a>
+                <a href="https://www.instagram.com/raph.bres/"><img width="64" height="64" src="https://img.icons8.com/material-outlined/64/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+            </div>
+
+       
+    </body>
+</html>

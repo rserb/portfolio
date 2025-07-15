@@ -1,0 +1,175 @@
+body {
+  background-color: #0D1512;
+  font-family: Arial;
+  margin:0px;
+}
+  
+header a:visited{
+  color:#adf0d4;
+}
+
+header a:link{
+  color:#adf0d4;
+  text-decoration: none;
+}
+  
+nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+
+.R{
+  font-size: 38px;
+  text-decoration: underline;
+  font-weight: bold;
+  color:#adf0d4;
+}
+
+
+nav>ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+li{
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.R{
+  font-size: 38px;
+  text-decoration: underline;
+  font-weight: bold;
+  color:#adf0d4;
+}
+
+
+
+.illustration{
+    padding-bottom: 600px;
+    background-image: url("https://raphbres7274.wordpress.com/wp-content/uploads/2024/06/journaux.jpg");
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-color: #121c18;
+}
+
+.container{
+    background-color: #121c18;
+    width: 100%;
+    color:#adf0d4;
+}
+
+.sous-titre{
+    color:#1fd8a4;
+}
+
+.content{
+    margin-left: 10%;
+    margin-right:10%;
+    padding-bottom: 50px;
+}
+
+.content>h1{
+    padding-top: 150px;
+    padding-bottom: 50px;
+    font-size:38px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  padding-top: 50px;
+  padding-bottom:50px;
+}
+
+.footer-content{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+  
+.footer-content>a{
+  margin-left: 25px;
+  margin-right:25px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Carrousel Styles */
+.swiper-container {
+    width: 100%;
+    padding: 20px 0 50px;
+}
+
+.swiper-slide {
+    width: 300px;
+    height: auto;
+    margin: 0 15px;
+}
+
+.projet {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.projet:hover {
+    transform: translateY(-5px);
+}
+
+.projet-txt {
+    padding: 20px;
+}
+
+.projet-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #3498db;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    color: #3498db;
+}
+
+.swiper-pagination-bullet-active {
+    background: #3498db;
+}
+
+@media (max-width: 768px) {
+    .swiper-slide {
+        width: 80%;
+    }
+}

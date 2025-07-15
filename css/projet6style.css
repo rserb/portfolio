@@ -1,0 +1,122 @@
+body {
+    background-color: #0D1512;
+    font-family: Arial;
+    margin:0px;
+  }
+    
+  header a:visited{
+    color:#adf0d4;
+  }
+  
+  header a:link{
+    color:#adf0d4;
+    text-decoration: none;
+  }
+    
+  nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  
+  
+  .R{
+    font-size: 38px;
+    text-decoration: underline;
+    font-weight: bold;
+    color:#adf0d4;
+  }
+  
+  
+  nav>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  
+  li{
+    margin-left:50px;
+    margin-right:50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .R{
+    font-size: 38px;
+    text-decoration: underline;
+    font-weight: bold;
+    color:#adf0d4;
+  }
+  
+  
+  
+  .illustration{
+      padding-bottom: 600px;
+      background-image: url("../imgs/MonA.png");
+      background-size: cover;
+      background-position-x: 50%;
+      background-position-y: 50%;
+      background-color: #121c18;
+  }
+  
+  .container{
+      background-color: #121c18;
+      width: 100%;
+      color:#adf0d4;
+  }
+  
+  .sous-titre{
+      color:#1fd8a4;
+  }
+  
+  .content{
+      margin-left: 10%;
+      margin-right:10%;
+      padding-bottom: 50px;
+  }
+  
+  .content>h1{
+      padding-top: 150px;
+      padding-bottom: 50px;
+      font-size:38px;
+  }
+
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+    .grid-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1rem 0; }
+    .phase { background: #00472d; padding: 1rem; border-radius: 8px; }
+    .tech-stack { display: flex; gap: 2rem; margin: 2rem 0; }
+    .challenges { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .testimonials { margin: 2rem 0; padding: 1rem; background: #e9ecef; border-left: 4px solid #495057; }
+    blockquote { font-style: italic; }
+    cite { display: block; margin-top: 0.5rem; font-weight: bold; }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  footer{
+    padding-top: 50px;
+    padding-bottom:50px;
+  }
+  
+  .footer-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+    
+    
+  .footer-content>a{
+    margin-left: 25px;
+    margin-right:25px;
+  }
