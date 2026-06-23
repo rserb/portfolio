@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Projet 7 | Site de RaphaelB</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/projet7style.css">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <li class="R"><a href="../index.html">R.</a></li>
+                <ul>
+                    <li><a href="projets.html">Mes Projets</a></li>
+                    <li><a href="about.html">A propos de moi</a></li>
+                    <li><a href="contact.html">Mes contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="illustration">
+            <p></p>
+        </section>
+
+
+        <section class="container">
+            <div class="content">
+                <h1>Modernisation de l'Orchestration Batch chez Nexpublica</h1>
+
+                <h2 class="sous-titre">Contexte et Enjeux</h2>
+                <p>Dans le cadre de mon stage de 14 semaines chez Nexpublica, entreprise spécialisée dans les solutions logicielles pour le secteur public français, j'ai eu pour mission de moderniser l'orchestration des processus d'exploitation critiques de l'entreprise. Concrètement, Nexpublica exécutait ses opérations d'arrêt et de redémarrage de systèmes (bases de données Oracle, applications métier, outils de gestion documentaire) via des scripts batch Windows anciens, opaques et difficiles à maintenir. L'enjeu était de traduire l'ensemble de ces processus vers une solution Linux moderne offrant une réelle visibilité sur ce qui se passe pendant ces opérations sensibles.</p>
+
+                <h2 class="sous-titre">Solution Technique</h2>
+                <p>Après avoir étudié plusieurs alternatives (Ansible, Python Fabric), j'ai retenu Apache Airflow comme plateforme d'orchestration, car elle offre une interface web en temps réel et une modélisation explicite des dépendances entre tâches. J'ai entièrement restructuré les scripts batch Windows en scripts bash modulaires, en découplant chaque grand script monolithique en une dizaine de tâches indépendantes et testables. Ces tâches ont ensuite été orchestrées via des DAGs Airflow (graphes de dépendances en Python), avec une planification automatique au format Cron et une gestion d'erreurs robuste à chaque étape.</p>
+
+                <h2 class="sous-titre">Défis Techniques</h2>
+                <p>Le projet a présenté plusieurs défis : la compréhension fine de dix workflows critiques totalisant plus de 4000 lignes de code à traduire, la fiabilisation des connexions SSH distantes vers une dizaine de serveurs différents, ainsi que le diagnostic de problèmes d'infrastructure (firewall, variables d'environnement, processus orphelins). Ces obstacles ont été surmontés grâce à une méthodologie itérative, des tests systématiques après chaque modification, et des échanges réguliers avec mon tuteur entreprise pour valider les choix d'architecture.</p>
+
+                <h2 class="sous-titre">Résultats et Applications</h2>
+                <p>La solution finale a permis de réduire le temps d'exécution de certains workflows de près de 30% grâce à la parallélisation des tâches indépendantes, tout en offrant une traçabilité complète de chaque opération. En cas d'erreur, les équipes peuvent désormais relancer uniquement l'étape concernée plutôt que tout le processus, ce qui représente un gain de temps considérable lors des opérations de maintenance. Cette modernisation pave également la voie à une future migration vers Kubernetes pour une orchestration encore plus robuste et scalable.</p>
+
+                <h2 class="sous-titre">Compétences Acquises</h2>
+                <p>Ce stage a considérablement renforcé mes compétences en scripting bash avancé, en administration de systèmes Linux et en orchestration de workflows avec Apache Airflow. Il m'a aussi permis de développer ma capacité à communiquer des concepts techniques à des interlocuteurs variés, et à travailler en autonomie sur un projet à fort enjeu de production, tout en respectant les contraintes et la validation d'une équipe technique expérimentée.</p>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+
+            <div class="footer-content">
+                <a href="https://www.linkedin.com/in/raphaël-bres-280615355"><img  width="64" height="64" src="https://img.icons8.com/ios-filled/64/FFFFFF/linkedin.png"></a>
+                <a href="https://github.com/rserb"><img width="64" height="64" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/64/FFFFFF/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.png" alt="external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo"/></a>
+                <a href="https://www.instagram.com/raph.bres/"><img width="64" height="64" src="https://img.icons8.com/material-outlined/64/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+            </div>
+
+       
+    </body>
+</html>
